@@ -11,7 +11,8 @@ import {
   Animated,
   PanResponder,
   Platform,
-  findNodeHandle
+  findNodeHandle,
+  View
 } from 'react-native'
 
 import closest from './libs/closest'
