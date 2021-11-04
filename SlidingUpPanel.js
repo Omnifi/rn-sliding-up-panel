@@ -56,8 +56,8 @@ class SlidingUpPanel extends React.PureComponent {
     showBackdrop: PropTypes.bool,
     backdropOpacity: PropTypes.number,
     friction: PropTypes.number,
-    containerStyle: ViewPropTypes.style,
-    backdropStyle: ViewPropTypes.style,
+    containerStyle: ViewPropTypes ? ViewPropTypes.style : View.propTypes ? View.propTypes.style : () => null,
+    backdropStyle: ViewPropTypes ? ViewPropTypes.style : View.propTypes ? View.propTypes.style : () => null,
     children: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
   }
 
